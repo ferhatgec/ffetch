@@ -17,7 +17,7 @@ for signal "start" [
     ]
 
     for argument "install" [
-        use exec "{sudo} {compiler} {standard} {curl4} {sources} -o {output}"
+        use exec "{sudo} {compiler} {standard} {sources} -o {output} {curl4}"
 
         for exists "{output}" [
             println "Installed to {output}"
